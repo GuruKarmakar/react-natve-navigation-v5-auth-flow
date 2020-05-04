@@ -10,7 +10,7 @@ interface RoutesProps {
 
 export const Routes: React.FC<RoutesProps> = ({ }) => {
   const { user, login } = useContext(AuthContext)
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     //check if user is looged in or not
     AsyncStorage.getItem('user')
